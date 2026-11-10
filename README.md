@@ -49,7 +49,13 @@ After (the Voice button appears):
 
 ## Install & first run
 
-1. Search `dsh-voice-polish` in the DSH plugin market (dshmarket / Discover), or: `dsh plugin --profile <profile> add dsh-voice-polish`
+1. Install this plugin (pick one):
+   - **DSH plugin market** (dshmarket / Discover tab): search `dsh-voice-polish` and one-click install
+   - **CLI · prebuilt Release tarball** (no build-script approval, recommended):
+     ```sh
+     dsh plugin --profile <profile> add https://github.com/howie79794-sys/dsh-voice-polish/releases/download/v1.0.0/dsh-voice-polish-1.0.0.tgz
+     ```
+   - **CLI · GitHub source**: `dsh plugin --profile <profile> add github:howie79794-sys/dsh-voice-polish`
 2. Refresh the page — a "🎤 Voice" button appears in the composer toolbar
 3. First click walks you through the one-time local model download; allow microphone access in the browser and the OS
 4. Speak

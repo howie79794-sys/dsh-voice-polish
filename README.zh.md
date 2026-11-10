@@ -49,7 +49,13 @@ DSH 自带的实验性语音包只做「转写 → 插原文」。你说的话�
 
 ## 安装与首次使用
 
-1. 在 DSH 插件市场（dshmarket / Discover）搜索 `dsh-voice-polish` 安装，或：`dsh plugin --profile <profile> add dsh-voice-polish`
+1. 安装本插件（三选一）：
+   - **DSH 插件市场**（dshmarket / Discover 页）搜索 `dsh-voice-polish` 一键安装
+   - **命令行 · Release 预构建包**（免构建脚本授权，推荐）：
+     ```sh
+     dsh plugin --profile <profile> add https://github.com/howie79794-sys/dsh-voice-polish/releases/download/v1.0.0/dsh-voice-polish-1.0.0.tgz
+     ```
+   - **命令行 · GitHub 源码**：`dsh plugin --profile <profile> add github:howie79794-sys/dsh-voice-polish`
 2. 刷新页面，输入框工具行出现「🎤 语音」按钮
 3. 首次点击按引导下载本地模型（一次性），并允许浏览器与系统麦克风权限
 4. 开始说话
