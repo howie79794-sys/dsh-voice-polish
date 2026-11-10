@@ -32,6 +32,10 @@ After (the Voice button appears):
 
 ![Composer toolbar after install](https://github.com/howie79794-sys/dsh-voice-polish/raw/main/docs/screenshots/composer-after.png)
 
+Recording in progress (live level + timer; "Stop & tidy" transcribes and tidies):
+
+![Recording state](https://github.com/howie79794-sys/dsh-voice-polish/raw/main/docs/screenshots/recording.png)
+
 ## Features
 
 - **Microphone button in the composer toolbar** — click to start, "Stop & tidy" to finish; live level bar + timer; Esc or Cancel discards

@@ -32,6 +32,10 @@ DSH 自带的实验性语音包只做「转写 → 插原文」。你说的话�
 
 ![安装后的输入框工具行](https://github.com/howie79794-sys/dsh-voice-polish/raw/main/docs/screenshots/composer-after.png)
 
+录音进行中（实时音量 + 计时，点「停止并整理」即转写并整理）：
+
+![录音进行中的界面](https://github.com/howie79794-sys/dsh-voice-polish/raw/main/docs/screenshots/recording.png)
+
 ## 功能
 
 - **输入框麦克风按钮**：点一下开始，说完点「停止并整理」；实时音量条 + 计时；Esc 或「取消」丢弃
