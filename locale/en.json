@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Voice Input with Polish",
+    "description": "Speak into your microphone: local SenseVoice transcription, then DeepSeek tidies the spoken text into a ready-to-send draft. Audio never leaves your machine."
+  }
+}

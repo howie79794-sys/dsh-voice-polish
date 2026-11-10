@@ -1,0 +1,26 @@
+# 语音输入（口语整理）
+# 底座复用 DSH 自带的实验性语音包（随安装包解析，无需声明依赖），
+# 再叠加本包的转写+润色服务与输入框麦克风 UI。
+# 注意：请不要同时启用官方“语音输入”bundle（experimental-voice-input-bundle），
+# 否则 sensevoice-local 识别器会重复注册。
+- insert:
+    - id: voice-polish-speech-to-text
+      name: '@deepseek-ai/dsh-experimental-speech-to-text'
+      config:
+        defaultProvider: sensevoice-local
+    - id: voice-polish-speech-to-text-sensevoice
+      name: '@deepseek-ai/dsh-experimental-speech-to-text-sensevoice'
+      config:
+        dataRoot: !!js dshHomePath('speech-to-text', 'sensevoice')
+    - id: voice-polish
+      name: 'dsh-voice-polish'
+      config:
+        enabled: true
+        # 识别语言提示：auto / zh / en / yue / ja / ko
+        language: auto
+        # 整理力度：light 只去语气词修标点；standard 飞书式整理；strict 进一步书面化
+        style: standard
+        # 润色走已配置的 DeepSeek 适配器，无需另配 key
+        polishProvider: deepseek-official
+        polishModel: deepseek-chat
+        maxDurationSeconds: 180

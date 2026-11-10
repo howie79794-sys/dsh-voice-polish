@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "语音输入（口语整理）",
+    "description": "对着麦克风说话：本地 SenseVoice 转写，DeepSeek 把口语整理成通顺文字，插回输入框草稿。音频不出本机。"
+  }
+}

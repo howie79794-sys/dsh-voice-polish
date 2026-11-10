@@ -1,0 +1,66 @@
+{
+  "name": "dsh-voice-polish",
+  "version": "1.0.0",
+  "description": "Voice input with Feishu-style polish: local SenseVoice transcription, then DeepSeek tidies your spoken words into a ready-to-send draft. 对着电脑说话，本地转写，AI 把口语整理成通顺文字。",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "voice-input",
+    "speech-to-text",
+    "sensevoice",
+    "dictation",
+    "polish",
+    "语音输入"
+  ],
+  "license": "MIT",
+  "author": "zhuangjiaxuan",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/howie79794-sys/dsh-voice-polish.git"
+  },
+  "homepage": "https://github.com/howie79794-sys/dsh-voice-polish",
+  "bugs": {
+    "url": "https://github.com/howie79794-sys/dsh-voice-polish/issues"
+  },
+  "type": "module",
+  "engines": {
+    "dsh": ">=0.2.2-rc.1",
+    "node": ">=20.0.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.1",
+    "@deepseek-ai/dsh-llm": ">=0.2.2-rc.1",
+    "@deepseek-ai/dsh-experimental-speech-to-text": ">=0.2.2-rc.1",
+    "@deepseek-ai/dsh-experimental-speech-to-text-sensevoice": ">=0.2.2-rc.1"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
