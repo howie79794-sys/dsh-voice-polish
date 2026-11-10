@@ -14,6 +14,9 @@
     "语音输入"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "author": "zhuangjiaxuan",
   "repository": {
     "type": "git",
